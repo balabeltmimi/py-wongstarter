@@ -13,6 +13,7 @@ def load_db(filename: str) -> list[Book]:
     with open(filename) as csv_file:
         reader = csv.DictReader(csv_file, delimiter=',')
         for row in reader:
+            row['length'] = int(row['length'])
             books.append(row)
 
     return books

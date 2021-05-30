@@ -8,6 +8,7 @@ commonmark==0.9.1
 cucumber-tag-expressions==2.0.4
 decorator==5.0.9
 flake8==3.9.2
+ipdb==0.13.8
 ipython==7.24.0
 ipython-genutils==0.2.0
 jedi==0.18.0
