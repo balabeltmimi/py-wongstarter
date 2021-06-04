@@ -9,6 +9,7 @@ def _():
     actual = load_db('./book-db.csv')
     assert expected == len(actual)
 
+
 @test('test length should be integer')
 def _():
     expected = 301

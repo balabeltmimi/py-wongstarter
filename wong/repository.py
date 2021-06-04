@@ -6,3 +6,11 @@ class BookRepository:
 
     def __init__(self, books: list[Book]) -> None:
         self.books = books
+
+    def find_by_author(self, name: str) -> list[Book]:
+        return [book for book in self.books if name in book['author']]
+        # result = []
+        # for book in self.books:
+        #     if name in book['author']:
+        #         result.append(book)
+        # return result
